@@ -1,72 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethan Corr | Academic Profile</title>
-    <style>
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background-color: #fcfcfc; }
-        header { border-bottom: 2px solid #eee; padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { margin-bottom: 5px; color: #2c3e50; }
-        .contact-info { font-size: 0.9em; color: #666; }
-        .contact-info a { color: #3498db; text-decoration: none; margin-right: 15px; }
-        section { margin-bottom: 40px; }
-        h2 { border-left: 4px solid #3498db; padding-left: 15px; text-transform: uppercase; font-size: 1.1em; letter-spacing: 1px; color: #2c3e50; }
-        .item { margin-bottom: 20px; }
-        .item-title { font-weight: bold; display: block; }
-        .item-sub { color: #7f8c8d; font-style: italic; }
-        .award-list { list-style: none; padding: 0; }
-        .award-list li { margin-bottom: 8px; padding-left: 20px; position: relative; }
-        .award-list li::before { content: "•"; color: #3498db; position: absolute; left: 0; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ethan Corr | Mathematician & Data Scientist</title>
+<meta name="description" content="Ethan Corr is a PhD candidate in Computational Mathematics &amp; Statistical Sciences at Marquette University and a Data Scientist at Clarios, working on convex optimization for neural networks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Ethan Corr</h1>
-        <div class="contact-info">
-            <span>Milwaukee, WI</span> | 
-            <a href="mailto:emcorr1@yahoo.com">Email</a>
-            <a href="https://github.com">GitHub</a>
-        </div>
-    </header>
+<header class="site-header">
+  <nav class="nav wrap">
+    <a href="index.html" class="wordmark">Ethan <span>Corr</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 5h16M2 10h16M2 15h16" stroke="#12213B" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="speaking.html">Speaking</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <section id="research-interests">
-        <h2>Research Interests</h2>
-        <p>Neural Networks, Machine Learning, Optimization, and Gaussian Process Models for environmental risk assessment.</p>
-    </section>
+<section class="hero">
+  <!-- SIGNATURE ELEMENT: abstract contour / optimization-landscape motif -->
+  <svg class="contour-field" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <path d="M-50,420 C150,360 300,460 480,400 C650,345 780,430 950,380 C1080,345 1150,390 1250,360" fill="none" stroke="#E3E6EC" stroke-width="2"/>
+    <path d="M-50,370 C160,300 320,400 500,340 C660,290 800,370 970,320 C1090,285 1160,330 1250,300" fill="none" stroke="#F1512F" stroke-width="1.6" opacity="0.35"/>
+    <path d="M-50,320 C170,250 330,340 520,280 C680,235 820,310 990,265 C1100,235 1170,275 1250,250" fill="none" stroke="#12213B" stroke-width="1.4" opacity="0.18"/>
+    <path d="M-50,270 C180,205 340,285 540,225 C700,182 840,255 1010,210 C1110,185 1180,220 1250,200" fill="none" stroke="#17A398" stroke-width="1.6" opacity="0.3"/>
+    <path d="M-50,470 C140,415 290,505 460,450 C630,398 760,475 940,430 C1070,398 1140,435 1250,415" fill="none" stroke="#E3E6EC" stroke-width="2"/>
+  </svg>
 
-    <section id="education">
-        <h2>Education</h2>
-        <div class="item">
-            <span class="item-title">PhD in Computational Mathematics & Statistical Sciences (Planned 2029)</span>
-            <span class="item-sub">Marquette University</span>
-        </div>
-        <div class="item">
-            <span class="item-title">MS in Computational Mathematics & Statistical Sciences (2025)</span>
-            <span class="item-sub">Marquette University | MS Essay: “Characterization of 1D Interpolating Neural Networks”</span>
-        </div>
-        <div class="item">
-            <span class="item-title">BS in Mechanical Engineering & Mathematics (2020)</span>
-            <span class="item-sub">Marquette University | Research: Gaussian process models for volcanic debris flow</span>
-        </div>
-    </section>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Milwaukee, WI</span>
+      <h1>Bridging optimization theory and applied machine learning.</h1>
+      <p class="role-line">PhD Candidate, <strong>Computational Mathematics &amp; Statistical Sciences</strong>, Marquette University · Data Scientist, <strong>Clarios</strong></p>
+      <p class="lede">I study the mathematics behind how neural networks learn, including convex optimization and sparse modeling, and apply data science and statistical modeling to real engineering and supply-chain problems by day.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="research.html">See my research</a>
+        <a class="btn btn-secondary" href="speaking.html">Book me to speak</a>
+        <a class="btn btn-secondary" href="cv.html">View CV</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="headshot" style="background:none; padding:0;">
+        <img src="images/headshot.jpg" alt="Ethan Corr" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="technical-skills">
-        <h2>Technical Expertise</h2>
-        <p><strong>Programming:</strong> Python, MATLAB, R, SQL</p>
-        <p><strong>Frameworks:</strong> PyTorch, Scikit-learn, Snowflake, PowerBI</p>
-        <p><strong>Methods:</strong> Neural Networks, Tree-based models, Probabilistic models</p>
-    </section>
+<section class="block tight">
+  <div class="wrap">
+    <div class="stat-strip">
+      <div class="stat"><span class="num">4th yr</span><span class="label">PhD Candidate at Marquette</span></div>
+      <div class="stat"><span class="num">2026</span><span class="label">NMDSI Hackathon Winner</span></div>
+      <div class="stat"><span class="num">3</span><span class="label">Marquette degrees, in math &amp; engineering</span></div>
+      <div class="stat"><span class="num">MKE</span><span class="label">Based in Milwaukee</span></div>
+    </div>
+  </div>
+</section>
 
-    <section id="honors">
-        <h2>Honors & Awards</h2>
-        <ul class="award-list">
-            <li><strong>Discovery World Hackathon Winner</strong> (2026) - Northwestern Mutual Data Science Institute</li>
-            <li><strong>Outstanding Mathematics Senior Award</strong> (2020) - Marquette University</li>
-            <li><strong>Regional Impact Award</strong> (2022) - Lab Data Automation</li>
-        </ul>
-    </section>
+<section class="block">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">About</span>
+      <h2>A mathematician who also ships production data science.</h2>
+      <p>I split my time between a PhD in mathematics and a full-time data science role in industry, and I think that combination is a strength, not a compromise.</p>
+    </div>
+    <p style="max-width: 68ch; color: var(--ink-soft);">
+      I'm a PhD candidate in the Department of Mathematical and Statistical Sciences at Marquette University, advised by Dr. Gregory Ongie. My research sits at the intersection of convex optimization and neural network theory, asking why and how these models learn the functions they do, and building tools to describe that behavior mathematically.
+    </p>
+    <p style="max-width: 68ch; color: var(--ink-soft);">
+      Alongside my PhD, I work full-time at Clarios in Glendale, WI, where I've spent the last several years moving from mechanical design engineering into AI/ML algorithm development and now data science, currently building supply chain optimization models and forecasting tools for the business. Before graduate school, I completed a BS in Mechanical Engineering and Mathematics at Marquette, with undergraduate research applying Gaussian process modeling to volcanic debris flow.
+    </p>
+    <p style="max-width: 68ch; color: var(--ink-soft);">
+      I'm also involved in Milwaukee's data science and STEM community, including mentoring undergraduate interns, leading K-12 STEM outreach events, and occasional talks at local conferences and company tech events on data science, engineering, and applied mathematics, and I hope to get even more involved going forward. See the <a href="speaking.html">Speaking</a> page for details.
+    </p>
+  </div>
+</section>
 
+<section class="block">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Explore</span>
+      <h2>Where to go from here</h2>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Research</h3>
+        <p>Convex optimization, neural network theory, and sparse modeling: what I work on and why it matters.</p>
+        <a class="card-link" href="research.html">View research &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>Curriculum Vitae</h3>
+        <p>Education, experience, honors, and technical skills, in full academic-CV form.</p>
+        <a class="card-link" href="cv.html">View CV &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>Speaking &amp; Outreach</h3>
+        <p>Available for talks in the Milwaukee area on data science, engineering, and applied math.</p>
+        <a class="card-link" href="speaking.html">View topics &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block tight">
+  <div class="wrap">
+    <div class="callout">
+      <div>
+        <h2>Have a project, collaboration, or event in mind?</h2>
+        <p>I'm always glad to talk about research collaboration, consulting, or speaking engagements.</p>
+      </div>
+      <a class="btn btn-primary" href="mailto:ethan.corr@marquette.edu">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a href="index.html" class="wordmark">Ethan <span>Corr</span></a>
+      <div class="footer-meta">Milwaukee, WI &middot; Marquette University</div>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:ethan.corr@marquette.edu">Email</a>
+      <a href="https://github.com/ethan-corr">GitHub</a>
+      <a href="cv.html">CV</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
