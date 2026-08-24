@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ethancorr.github.io/sitemap.xml
